@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+yarn-error.log
+npm-debug.log*
+
+# React build
+/frontend/build
+/frontend/.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Testing
+/coverage
+.pytest_cache/
+
+# Railway / deploy
+.railway/
