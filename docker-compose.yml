@@ -10,11 +10,12 @@ services:
       - ./backend/.env
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      args:
+        REACT_APP_BACKEND_URL: http://localhost:6020
     restart: unless-stopped
     ports:
-      - "6021:3000"
-    environment:
-      REACT_APP_BACKEND_URL: http://localhost:6020
+      - "6021:80"
     depends_on:
       - backend
